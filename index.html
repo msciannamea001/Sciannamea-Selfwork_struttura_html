@@ -1,6 +1,7 @@
 <!--
-    Per comodità, le immagini utilizzate sono prese con percorso assoluto dal sito.
-    La sezione degli articoli non in evidenza contiene solo 3 articoli, giusto per differenziarli da quelli in evidenza.
+    Modificato quanto richiesto nella revisione.
+    - Eliminati elementi <p> interni ad <a>
+    - Eliminati <a> interni a <button>.
 -->
 <!DOCTYPE html>
 <html lang="it">
@@ -22,14 +23,14 @@
             background-color: rgb(200, 198, 198);
             padding-top: 5%;
         }
+        button{
+            font-family: inherit;
+            text-decoration: inherit;
+        }
     </style>
 </head>
 
 <body>
-    <!--
-        Ho preferito usare <section> e non <header>, sulla base della pagina originale.
-        In alternativa avrei messo la classe "blog-header" come header.
-    -->
     <main>
     <section class="blog-header">
         <h1>Blog</h1>
@@ -40,7 +41,7 @@
         <!--Articoli in evidenza-->
         <section class="blog-articoli-evidenza">
             <h2>Articoli in evidenza</h2>
-            <article>
+            <article> <!--articolo in evidenza 1-->
                 <a href="https://aulab.it/notizia/250/cose-il-linguaggio-html-e-come-impararlo?_gl=1*u1deiz*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
                     <img src="https://aulab.it/wp-content/uploads/2023/03/HTML-e-come-impararlo_ORIZZONTALE.jpg" alt="developer in miniatura davanti al maxi schermo di un pc con il numero 5 dell html 5">
                 </a>
@@ -50,13 +51,12 @@
                     <h3>Cos'è il linguaggio HTML e come impararlo</h3>
                 </a>
                 <a href="https://aulab.it/notizia/250/cose-il-linguaggio-html-e-come-impararlo?_gl=1*u1deiz*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
-                    <p>Il linguaggio HTML (Hypertext Markup Language) è uno dei più conosciuti e diffusi: lo si trova infatti praticamente in tutte le pagine web esistenti. È una scelta popolare tra i principianti che si…   </p>
+                    Il linguaggio HTML (Hypertext Markup Language) è uno dei più conosciuti e diffusi: lo si trova infatti praticamente in tutte le pagine web esistenti. È una scelta popolare tra i principianti che si… 
                 </a>
-                <a href="https://aulab.it/notizia/250/cose-il-linguaggio-html-e-come-impararlo?_gl=1*u1deiz*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
-                    <p>Leggi tutto</p>
-                </a>
+                <br>    
+                <button>Leggi tutto</button>
             </article>
-            <article>
+            <article>   <!--articolo in evidenza 2-->
                 <a href="https://aulab.it/notizia/195/corso-javascript-online-cosa-ce-da-sapere?_gl=1*1541wnn*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
                     <img src="https://aulab.it/wp-content/uploads/2020/12/articolo_programmare_Javascript.jpg" alt="Programmatrice in miniatura davanti al computer con logo JS affianco">
                 </a>
@@ -66,13 +66,12 @@
                     <h3>Corso Javascript online: cosa c’è da sapere</h3>
                 </a>
                 <a href="https://aulab.it/notizia/195/corso-javascript-online-cosa-ce-da-sapere?_gl=1*1541wnn*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
-                    <p>Essere uno sviluppatore web vuol dire imparare più linguaggi di programmazione per poter creare diversi tipi di applicazioni.  Per ogni applicazione, la maggior parte delle volte, …  </p>
+                    Essere uno sviluppatore web vuol dire imparare più linguaggi di programmazione per poter creare diversi tipi di applicazioni.  Per ogni applicazione, la maggior parte delle volte, … 
                 </a>
-                <a href="https://aulab.it/notizia/195/corso-javascript-online-cosa-ce-da-sapere?_gl=1*1541wnn*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
-                    <p>Leggi tutto</p>
-                </a>
+                <br>
+                <button>Leggi tutto</button>
             </article>
-            <article>
+            <article> <!--articolo in evidenza 3-->
                 <a href="https://aulab.it/notizia/192/come-imparare-a-programmare-con-un-corso-php?_gl=1*pamab4*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
                     <img src="https://aulab.it/wp-content/uploads/2020/12/articolo_programmare_in_php.jpg" alt="programmatore visto di spalle alla scrivania mentre utilizza php">
                 </a>
@@ -82,19 +81,15 @@
                     <h3>Come imparare a programmare con un corso PHP</h3>
                 </a>
                 <a href="https://aulab.it/notizia/192/come-imparare-a-programmare-con-un-corso-php?_gl=1*pamab4*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
-                    <p>Un buon programmatore, si sa, necessita di un ampio bagaglio di conoscenze per potersi districare tra le difficoltà che questo mestiere comporta. Oggi le richieste sul mercato sono molteplic… </p>
+                    Un buon programmatore, si sa, necessita di un ampio bagaglio di conoscenze per potersi districare tra le difficoltà che questo mestiere comporta. Oggi le richieste sul mercato sono molteplic…
                 </a>
-                <a href="https://aulab.it/notizia/192/come-imparare-a-programmare-con-un-corso-php?_gl=1*pamab4*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
-                    <p>Leggi tutto</p>
-                </a>
+                <br>
+                <button>Leggi tutto</button>
             </article>
         </section>
-        <!--Articoli generici, <br> usato solo per lasciare spazio-->
-        <br>
-        <br>
-        <br>
+        <!--Articoli generici-->
         <section class="blog-articoli-total">
-            <article>
+            <article> <!--Articolo generico 1-->
                 <a href="https://aulab.it/perche-scegliere-java-per-il-backend-development?_gl=1*1wrt3vx*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
                     <img src="https://aulab.it/wp-content/uploads/2020/10/articolo_backend.jpg" alt="Tre sviluppatrici che corrono con ingranaggi in mano">
                 </a>
@@ -104,14 +99,12 @@
                     <h3>Perchè scegliere Java per il backend development</h3>
                 </a>
                 <a href="https://aulab.it/perche-scegliere-java-per-il-backend-development?_gl=1*1wrt3vx*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
-                    <p>Nel mondo dello sviluppo software, la scelta del linguaggio di programmazione per il backend development è cruciale. Tra le molte opzioni disponibili, il linguaggio Java continua a essere una scelta … </p>
+                    Nel mondo dello sviluppo software, la scelta del linguaggio di programmazione per il backend development è cruciale. Tra le molte opzioni disponibili, il linguaggio Java continua a essere una scelta …
                 </a>
-                <a href="https://aulab.it/perche-scegliere-java-per-il-backend-development?_gl=1*1wrt3vx*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
-                    <p>Leggi tutto</p>
-                </a>
+                <br>
+                <button>Leggi tutto</button>
             </article>
-
-            <article>
+            <article> <!--Articolo generico 2-->
                 <a href="https://aulab.it/cosa-sono-le-allucinazioni-nellintelligenza-artificiale?_gl=1*1avnrqc*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
                     <img src="https://aulab.it/wp-content/uploads/2015/03/Chat-gpt-10-prompts-per-web-developer-768x432-1.jpg" alt="Prompt designer che pensa a come conversare con l'intelligenza artificiale con robottino sulla spalla">
                 </a>
@@ -121,14 +114,12 @@
                     <h3>Cosa sono le “allucinazioni” nell’intelligenza artificiale</h3>
                 </a>
                 <a href="https://aulab.it/cosa-sono-le-allucinazioni-nellintelligenza-artificiale?_gl=1*1avnrqc*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
-                    <p>L’intelligenza artificiale (AI) sta rivoluzionando numerosi settori, dal riconoscimento vocale e facciale, alla guida automatica, alla produzione di contenuti, agevolando la vita come il lavoro di mol…</p>
+                    L’intelligenza artificiale (AI) sta rivoluzionando numerosi settori, dal riconoscimento vocale e facciale, alla guida automatica, alla produzione di contenuti, agevolando la vita come il lavoro di mol…
                 </a>
-                <a href="https://aulab.it/cosa-sono-le-allucinazioni-nellintelligenza-artificiale?_gl=1*1avnrqc*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
-                    <p>Leggi tutto</p>
-                </a>
+                <br>
+                <button>Leggi tutto</button>
             </article>
-
-            <article>
+            <article> <!--Articolo generico 3-->
                 <a href="https://aulab.it/cyber-sicurezza-come-salvare-le-password-nel-database-in-modo-sicuro?_gl=1*1fq5ar*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
                     <img src="https://aulab.it/wp-content/uploads/2023/07/database-cover-1.jpg" alt="Illustrazione di un developer che ha a che fare con database e archivi">
                 </a>
@@ -138,14 +129,12 @@
                     <h3>Cyber sicurezza: come salvare le password nel database in modo sicuro</h3>
                 </a>
                 <a href="https://aulab.it/cyber-sicurezza-come-salvare-le-password-nel-database-in-modo-sicuro?_gl=1*1fq5ar*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
-                    <p>La cyber-security è diventata una preoccupazione cruciale nell’era digitale. Con l’aumento degli attacchi informatici e delle violazioni dei dati, proteggere le informazioni sensibili è fondamentale…</p>
+                    La cyber-security è diventata una preoccupazione cruciale nell’era digitale. Con l’aumento degli attacchi informatici e delle violazioni dei dati, proteggere le informazioni sensibili è fondamentale…
                 </a>
-                <a href="https://aulab.it/cyber-sicurezza-come-salvare-le-password-nel-database-in-modo-sicuro?_gl=1*1fq5ar*_up*MQ..*_ga*NjM1OTYwNjkxLjE3MjAxMTk2ODQ.*_ga_CLQWCBG221*MTcyMDExOTY4My4xLjAuMTcyMDExOTY4My4wLjAuNzI2NDgyMDE3" target="_blank">
-                    <p>Leggi tutto</p>
-                </a>
+                <br>
+                <button>Leggi tutto</button>
             </article>
         </section>
     </main>
 </body>
-
 </html>
